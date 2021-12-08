@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 #mainContainer {
   width: 100%;
@@ -20,14 +21,17 @@
   width: 60%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 #headerTop {
   width: 90%;
-  height: 80px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid white;
 }
 .logoMain {
   width: 210px;
@@ -43,12 +47,45 @@
   /* background-color: aquamarine; */
 }
 .headerTopText {
+  height: 64px;
   color: #fff;
   font-size: 0.8rem;
   font-family: "Poppins", sans-serif;
   margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #headerTopRight {
-  width: 20%;
+  min-width: 20%;
+  max-width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  /* background-color: aquamarine; */
+}
+.whiteIcon {
+  color: #fff;
+  padding-right: 7px;
+}
+.headerTopText:hover {
+  border-bottom: 3px solid tomato;
+}
+#headerMiddle {
+  width: 60%;
+  height: 500px;
+  background-color: tomato;
+}
+#heroFooter {
+  width: 80%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+}
+.footItem {
+  max-width: 25%;
+  height: 70px;
   background-color: #a11;
 }
