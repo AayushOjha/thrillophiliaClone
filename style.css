@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#mainContainer {
+  width: 100%;
+  height: auto;
+}
+#heroSection {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/heroBg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+#innerHeroSec {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+#headerTop {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoMain {
+  width: 210px;
+  height: 42px;
+  background-image: url("./assets/thrillophiliaLogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.makeRow {
+  display: flex;
+  flex-direction: row;
+  /* background-color: aquamarine; */
+}
+.headerTopText {
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-right: 15px;
+}
+#headerTopRight {
+  width: 20%;
+  background-color: #a11;
+}
