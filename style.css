@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .centerFlex-y{
@@ -21,6 +20,7 @@
 #mainContainer {
   width: 100%;
   height: auto;
+  padding-bottom: 20px;
 }
 #heroSection {
   width: 100%;
@@ -59,7 +59,6 @@
 .makeRow {
   display: flex;
   flex-direction: row;
-  /* background-color: aquamarine; */
 }
 .headerTopText {
   height: 64px;
@@ -79,7 +78,6 @@
   justify-content: center;
   align-items: center;
   box-sizing: content-box;
-  /* background-color: aquamarine; */
 }
 .whiteIcon {
   color: #fff;
@@ -95,7 +93,6 @@
   width: 70%;
   max-height: 95%;
   height: auto;
-  /* background-color: blueviolet; */
 }
 #heroFooter {
   width: 80%;
@@ -107,7 +104,6 @@
 .footItem {
   max-width: 25%;
   height: 70px;
-  /* background-color: #a11; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -130,7 +126,6 @@
 #searchTabs{
   width: auto;
   height: 40px;
-  /* background-color: red; */
 }
 
 .searchTab{
@@ -229,3 +224,105 @@
 #midTop{
   margin-bottom: 50px;
 }
+
+/* hero section ends here */
+.contentCointainer{
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding: 50px;
+  overflow: hidden;
+}
+/* best of rajasthan start */
+.topline {
+  font-family: 'Poppins', sans-serif;
+  width:fit-content;
+  color: #3a3a3a;
+  max-width: 500px;
+  margin: 10px auto;
+}
+.anim {
+  background-color: none;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.generalImageCard {
+  height: 300px;
+  max-width: 20%;
+  min-width: 200px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 15px;
+}
+.imgInCard {
+  height: 100%;
+  width: 100%; 
+  border-radius: 10px;
+  object-fit: cover;
+}
+/* .imgInCard:hover {
+  height: 510px;
+  width: 310px;
+  border-radius: 5px;
+} */
+
+/* escape section  start*/
+
+.sectionContainer{
+  padding: 50px 30px;
+  margin: 10px 0;
+  width: 100%;
+  height: auto;
+}
+
+.longImageCard{
+  height: 400px;
+  width: 20%;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.perfectEscapeBox{
+  width: 35%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+#escapeText
+ {
+   font-size: 2rem;
+   color: #3a3a3a;
+   line-height: 1.2;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   margin-bottom: 30px;
+  }
+
+ #escapeText2
+ {
+   color: #aaa;
+   line-height: 1.2;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+ }
+
+ .smallDivider{
+   width: 100px;
+   height: 2px;
+   border:1px solid #ff5300;
+   margin: 10px auto;
+   margin-bottom: 30px;
+ }
+
+ /* escape section end */
