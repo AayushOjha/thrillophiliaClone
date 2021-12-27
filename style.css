@@ -2,7 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color:#3a3a3a
 }
+
+/* reuseable styles    -my bootstarap Akk */
 
 .centerFlex-y{
   display: flex;
@@ -16,6 +19,30 @@
   justify-content: center;
   align-items: center;
 }
+
+.whiteIcon {
+  color: #fff;
+  padding-right: 7px;
+}
+.greyIcon {
+  color: #aaa;
+}
+
+.yellowColor
+{
+  color: yellow;
+}
+.popinsFont4{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.popinsFont6{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* reuseable styles ends here */
 
 #mainContainer {
   width: 100%;
@@ -70,6 +97,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.headerTopText P {
+  color: #fff;
+}
+
 #headerTopRight {
   min-width: 20%;
   max-width: 50%;
@@ -79,13 +111,7 @@
   align-items: center;
   box-sizing: content-box;
 }
-.whiteIcon {
-  color: #fff;
-  padding-right: 7px;
-}
-.greyIcon {
-  color: #aaa;
-}
+
 .headerTopText:hover {
   border-bottom: 3px solid tomato;
 }
@@ -108,6 +134,7 @@
   flex-direction: row;
   align-items: center;
   padding: 0 10px;
+  cursor: pointer;
 }
 .iconBox {
   margin: 5px;
@@ -152,6 +179,7 @@
 
 .searchTab:hover{
   background-color: #ff5300;
+  transition-delay: 0.2s;
 }
 
 #searchBarCointainer{
@@ -166,6 +194,7 @@
   background-color: #fff;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  overflow: hidden;
 }
 
 #searchIconBox
@@ -231,10 +260,11 @@
   height: auto;
   margin: 0 auto;
   padding-left: 100px;
-  padding: 50px;
+  padding: 50px 0;
   overflow: hidden;
 }
 /* best of rajasthan start */
+
 .topline {
   font-family: 'Poppins', sans-serif;
   width:fit-content;
@@ -249,16 +279,19 @@
   display: flex;
   justify-content:space-between;
   align-items:center;
+  /* overflow:scroll; */
+  scrollbar-width: none;
+  padding: 10px;
 }
 .generalImageCard {
   height: 300px;
-  max-width: 20%;
-  min-width: 200px;
+  /* max-width: 22%; */
+  width: 100%;
+  /* min-width: 200px; */
   text-align: center;
   font-size: 30px;
   border-radius: 10px;
   cursor: pointer;
-  margin: 0 15px;
 }
 .imgInCard {
   height: 100%;
@@ -266,23 +299,51 @@
   border-radius: 10px;
   object-fit: cover;
 }
-/* .imgInCard:hover {
-  height: 510px;
-  width: 310px;
+
+.imgInCard:hover {
+  height: 101%;
+  width: 101%;
   border-radius: 5px;
-} */
+}
+
+.gicOuter{
+  height: auto;
+  /* max-width: 50%; */
+  width: 300px;
+  min-width: 22%;
+  margin: 0 15px;
+}
+
+.gicBottom{
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+}
+
+.pckName{
+  color: #3a3a3a;
+  margin-bottom: 5px;
+}
+
+.pckRate{
+  color: #777;
+  font-size: 0.8rem;
+}
+
+/* best of rajasthan ends */
 
 /* escape section  start*/
 
 .sectionContainer{
-  padding: 50px 30px;
+  padding: 30px 30px;
   margin: 10px 0;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .longImageCard{
-  height: 400px;
+  height: 350px;
   width: 20%;
   text-align: center;
   font-size: 30px;
@@ -292,7 +353,7 @@
 
 .perfectEscapeBox{
   width: 35%;
-  height: 400px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -326,3 +387,23 @@
  }
 
  /* escape section end */
+ /* IMAGGE slider start*/
+
+ .imgCointainer {
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  /* padding: 30px 30px; */
+  height: auto;
+  overflow: hidden;
+}
+
+.imgSlider{
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+
+ /* IMAGGE slider ends */
